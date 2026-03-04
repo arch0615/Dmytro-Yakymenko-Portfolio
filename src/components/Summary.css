@@ -1,0 +1,139 @@
+.summary {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.summary-container {
+  background: transparent;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.summary-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.summary-text p {
+  margin-bottom: 1rem;
+}
+
+.skills-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.skills-by-domain {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.domain-category {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.domain-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  white-space: nowrap;
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+}
+
+.tech-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+.skill-icon-fallback {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .summary-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skills-by-domain {
+    gap: 1.5rem;
+  }
+  
+  .domain-category {
+    padding: 1rem;
+  }
+  
+  .domain-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .skills-line {
+    gap: 0.5rem;
+  }
+  
+  .skill-item {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .skill-icon {
+    font-size: 1rem;
+  }
+}
